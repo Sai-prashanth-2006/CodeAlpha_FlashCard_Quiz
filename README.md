@@ -46,6 +46,25 @@ The number shown for a topic reflects its current saved questions. Users can add
 - **Local persistence:** The question bank is saved in app-private storage on the device.
 - **Offline use:** After installation, the quiz does not need an account or network connection.
 
+## Screenshots
+
+The images below show the topic selection screen and examples of both correct and incorrect answer feedback.
+
+### Topic selection
+
+<p align="center">
+  <img src="docs/screenshots/topic-selection.jpeg" width="280" alt="Recall home screen showing the seven study topics and their question counts" />
+</p>
+
+### Quiz and answer feedback
+
+<p align="center">
+  <img src="docs/screenshots/quiz-correct-answer.jpeg" width="280" alt="Cloud quiz question with the correct choice selected and positive feedback" />
+  <img src="docs/screenshots/quiz-incorrect-answer.jpeg" width="280" alt="Cloud quiz question with an incorrect selection, the correct answer, and explanation" />
+</p>
+
+The left quiz example shows correct-answer feedback; the right example shows incorrect-answer feedback and reveals the correct option.
+
 ## Technology stack
 
 | Component | Technology |
@@ -89,7 +108,11 @@ The app uses a single Activity and Compose-based screens. The main screen switch
     │       └── res/values/
     ├── docs/
     │   ├── ARCHITECTURE.md
-    │   └── USER_GUIDE.md
+    │   ├── USER_GUIDE.md
+    │   └── screenshots/
+    │       ├── quiz-correct-answer.jpeg
+    │       ├── quiz-incorrect-answer.jpeg
+    │       └── topic-selection.jpeg
     ├── gradle/
     │   ├── libs.versions.toml
     │   └── wrapper/
